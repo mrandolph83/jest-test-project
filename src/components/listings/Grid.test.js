@@ -27,6 +27,10 @@ test('The title contains React', () => {
 
 const array1 = ["React Native", "React"];
 
+// describe () groups tests together
+describe('Arrays and Objects Tests', () => {
+
+
 test('The list of courses mentions React Native and React', () => {
     expect(['React Native', 'React', 'MeteorJS']).toEqual(expect.arrayContaining(array1));
 });
@@ -40,6 +44,7 @@ test('The first course has a property title', () => {
 // first variable is key, second is value
 test('The first course has a property of views and value of 31,266', () => {
     expect(data[0]).toHaveProperty('views', '31,266');
+});
 });
 
 
